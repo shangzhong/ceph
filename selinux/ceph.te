@@ -86,6 +86,12 @@ logging_send_syslog_msg(ceph_t)
 
 sysnet_dns_name_resolve(ceph_t)
 
+corenet_tcp_connect_afs3_callback_port(ceph_t)
+corenet_tcp_connect_afs_pt_port(ceph_t)
+corenet_tcp_connect_gatekeeper_port(ceph_t)
+corenet_tcp_connect_tor_port(ceph_t)
+dev_rw_nvme(ceph_t)
+
 # basis for future security review
 allow ceph_t ceph_var_run_t:sock_file { create unlink write setattr };
 allow ceph_t self:capability { sys_rawio chown };
